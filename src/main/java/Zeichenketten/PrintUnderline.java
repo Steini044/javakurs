@@ -10,7 +10,7 @@ public class PrintUnderline {
         while(index >= 0){
             result.append(" ".repeat(index - startIndex));
             result.append("-".repeat(searchLength));
-            startIndex += index + searchLength;
+            startIndex = index + searchLength;
             index = sb.indexOf(search.toLowerCase(),startIndex);
         }
         System.out.println(string);
